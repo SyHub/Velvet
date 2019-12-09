@@ -1,0 +1,878 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
+
+html, body {
+  height:100%;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+header {
+  background-size: 100%;
+  background: url('../pictures/smores.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 800px;
+
+}
+
+a {
+  color: #322bff;
+  text-decoration: underline;
+  transition: 500ms;
+}
+
+a:hover {
+  color: #26a1ff;
+}
+
+#wrapper {
+  max-width: 50%;
+}
+
+p {
+  padding: 0px;
+  font-family: 'raleway';
+  font-size: .55em;
+  text-align: center;
+}
+
+h2 {
+  font-size: .7em;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'raleway';
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*toggle menu*/
+* {  padding: 0; margin: 0;}
+body {
+  background: url(../pictures/p5.png);
+  color: white;
+  font-family: 'raleway';
+}
+
+.just-layout-stuff {
+  width: 2em;
+  padding-top: 0;
+  margin: 0 auto;
+}
+.off-canvas {
+  position: fixed;
+  width: 100%;
+
+  -webkit-transform: translate3d(0, -100%, 0);
+     -moz-transform: translate3d(0, -100%, 0);
+       -o-transform: translate3d(0, -100%, 0);
+      -ms-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  
+  padding: 30px;
+  background: #6b3f3f;
+  color: white;
+
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: 999;
+}
+
+.off-canvas {  padding-top: 100px;}
+.show {
+  position: fixed;
+
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.container {
+  width: 100%; 
+  margin: 0 auto;
+}
+.open-close {
+  position: fixed;
+  background: #6b3f3f;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 2%;
+    margin-left:-3px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  -webkit-transition: all 0.4s ease-in;
+     -moz-transition: all 0.4s ease-in;
+       -o-transition: all 0.4s ease-in;
+      -ms-transition: all 0.4s ease-in;
+          transition: all 0.4s ease-in;
+  z-index: 1000;
+}
+
+.open-close:before {
+  content: "";
+  display: block;
+  background: white; 
+  position: absolute;
+  height: 60%;
+  width: 1px;
+  top: 20%;
+  left: 50%;
+}
+.open-close:after {
+  content: "";
+  display: block;
+  background: white; 
+  position: absolute;
+  height: 1px;
+  width: 60%;
+  top: 50%;
+  left: 20%;
+}
+.open-close:hover {
+  background: red;
+}
+.open {
+  background: #6b3f3f;
+
+  -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+       -o-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.open:before {background: white;}
+.open:after {background: white;}
+ul {  list-style: none;}
+.menu-categories {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.menu-categories li {
+  width: 100%;
+  float: left;
+}
+.menu-categories li ul li {
+  font-size: 0.75em;
+
+}
+
+#header img {
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+#header ul li {
+  display: inline-block;
+  /*font-size: 1.25em;*/
+  margin-right: 15px;
+  padding: 0px;
+}
+
+.logo {
+  font-size: 2em;
+  font-family: 'great vibes';
+  color: red;
+  text-align: center;
+  padding-top: .5%;
+}
+
+.sub-logo {
+  font-size: .8em;
+  font-family: 'raleway';
+  color: red;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.tagline {
+  font-size: 2em;
+  text-align: center;
+  color: #35c8e7;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 1%;
+}
+
+.tagline-02 {
+  background-image: url('../pictures/frosting.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: 1.8em;
+  color: #6b3f3f;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+.tagline-03 {
+  background-image: url('../pictures/chocolate-bars.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: 1.8em;
+  color: #ffffff;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+.tagline-04 {
+  background-image: url('../pictures/pie.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: 1.8em;
+  color: #6b3f3f;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+span {
+  font-style: italic;
+}
+
+.fullscreen {
+  height: 100%;
+  position: relative;
+}
+
+.fullscreen .header {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+  margin: 0px auto;
+}
+
+.footer {
+  background: url("../pictures/baking.jpg") no-repeat;
+  background-size: cover;
+  background-width: 100%;
+  bottom: 0;
+  font-size: .75em;
+  font-family: 'raleway';
+  width: 100%;
+  padding: 11.25% 0% 11.25% 0%;
+  margin: 0;
+  text-align: center;
+  color: red;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.more {
+  text-align: center;
+  font-size: 1.06em;
+}
+.more a {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+.more a:hover {
+  color: #777;
+}
+
+.pic-content {
+  width: 80%;
+  display: inline-block;
+  box-shadow: none;
+  margin-left: 33%;
+}
+
+.cupcakes {
+
+}
+
+.brownies {
+  background-image: url('../pictures/baking.jpg');
+}
+
+.pies {
+  background-image: url('../pictures/pie_crust.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.block-main {
+  background: rgba( 255,255,255,.8);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: black;  
+}
+
+
+
+/*flip card*/
+#main-container {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flip-container {
+  position: relative;
+  padding: 3%;
+  margin-right: 0%;
+  margin-left: 0%;
+  width: 25%;
+  height: 486px;
+  z-index: 1;
+  perspective: 1000;
+  display: inline-block;
+}
+
+.flip-container-pies {
+  position: relative;
+  margin: 0% auto;
+  width: 50%;
+  overflow: hidden;
+  height: 540px;
+  z-index: 1;
+  perspective: 1000;
+}
+
+.pies-info {
+  margin: 0 auto;
+  width: 100%;
+  color: #6b3f3f;
+}
+
+.dessert-name {
+  font-size: 1.2em;
+  padding-top: 3%;
+  font-family: 'raleway'
+}
+
+.descript {
+  font-size: .8em;
+}
+
+.descript-2 {
+  font-size: .5em;
+  padding-bottom: 2.5%;
+
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#cupcakes .face.back { 
+  padding-top: 120px;
+  color: #6b3f3f;
+}
+
+#brownies .face.back { 
+  padding-top: 120px;
+  color: #6b3f3f;
+}
+
+#pies .face.back { 
+  padding-top: 120px; 
+  color: #6b3f3f;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/********    MOBILE    **********/
+
+
+@media only screen and (max-width : 480px) {
+
+  body{
+    font-size: 1em;
+  }
+
+  html, body {
+  height:100%;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+header {
+  background-size: 100%;
+  background: url('../pictures/colorful-cups.jpg') no-repeat;
+  background-size: cover;
+  background-width: 100%;
+  height: 360px;
+
+}
+
+a {
+  color: #322bff;
+  text-decoration: underline;
+  transition: 500ms;
+}
+
+a:hover {
+  color: #26a1ff;
+}
+
+
+
+p {
+  padding: 0px;
+  font-family: 'raleway';
+  font-size: .55em;
+  text-align: center;
+}
+
+h2 {
+  font-size: .7em;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'raleway';
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*toggle menu*/
+* {  padding: 0; margin: 0;}
+body {
+  background: url(../pictures/p5.png);
+  color: white;
+  font-family: 'raleway';
+}
+.just-layout-stuff {
+  width: 2em;
+  padding-top: 0;
+  margin: 0 auto;
+}
+.off-canvas {
+  position: fixed;
+  width: 100%;
+
+  -webkit-transform: translate3d(0, -100%, 0);
+     -moz-transform: translate3d(0, -100%, 0);
+       -o-transform: translate3d(0, -100%, 0);
+      -ms-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  
+  padding: 30px;
+  background: #6b3f3f;
+  color: white;
+
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: 999;
+}
+
+.off-canvas {  padding-top: 100px;}
+.show {
+  position: fixed;
+
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.container {
+  width: 100%; 
+  margin: 0 auto;
+}
+.open-close {
+  position: fixed;
+  background: #6b3f3f;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 2%;
+    margin-left:-3px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  -webkit-transition: all 0.4s ease-in;
+     -moz-transition: all 0.4s ease-in;
+       -o-transition: all 0.4s ease-in;
+      -ms-transition: all 0.4s ease-in;
+          transition: all 0.4s ease-in;
+  z-index: 1000;
+}
+
+.open-close:before {
+  content: "";
+  display: block;
+  background: white; 
+  position: absolute;
+  height: 60%;
+  width: 1px;
+  top: 20%;
+  left: 50%;
+}
+.open-close:after {
+  content: "";
+  display: block;
+  background: white; 
+  position: absolute;
+  height: 1px;
+  width: 60%;
+  top: 50%;
+  left: 20%;
+}
+.open-close:hover {
+  background: red;
+}
+.open {
+  background: #6b3f3f;
+
+  -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+       -o-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.open:before {background: white;}
+.open:after {background: white;}
+ul {  list-style: none;}
+.menu-categories {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.menu-categories li {
+  width: 100%;
+  float: left;
+}
+.menu-categories li ul li {
+  font-size: 0.75em;
+
+}
+
+#header img {
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+#header ul li {
+  display: inline-block;
+  /*font-size: 1.25em;*/
+  margin-right: 15px;
+  padding: 0px;
+}
+
+.logo {
+  font-size: 1.1em;
+  font-family: 'great vibes';
+  color: red;
+  text-align: center;
+  padding-top: .5%;
+}
+
+.sub-logo {
+  font-size: .5em;
+  font-family: 'raleway';
+  color: red;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.tagline {
+  font-size: 2em;
+  text-align: center;
+  color: #35c8e7;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10%;
+}
+
+.tagline-02 {
+  background-image: url('../pictures/frosting.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: .8em;
+  color: #6b3f3f;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+.tagline-03 {
+  background-image: url('../pictures/chocolate-bars.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: .8em;
+  color: #ffffff;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+.tagline-04 {
+  background-image: url('../pictures/pie.jpg');
+  background-width: 100%;
+  background-size: cover;
+  font-size: .8em;
+  color: #6b3f3f;
+  padding-top: 18%;
+  font-family: 'raleway';
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+}
+
+span {
+  font-style: italic;
+}
+
+.fullscreen {
+  height: 100%;
+  position: relative;
+}
+
+.fullscreen .header {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+  margin: 0px auto;
+}
+
+.footer {
+  background: url("../pictures/baking.jpg");
+  background-size: cover;
+  background-width: 100%;
+  bottom: 0;
+  font-size: .5em;
+  font-family: 'raleway';
+  width: 100%;
+  padding: 11.25% 0% 11.25% 0%;
+  margin: 0;
+  text-align: center;
+  color: red;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.more {
+  text-align: center;
+  font-size: 1.06em;
+}
+.more a {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+.more a:hover {
+  color: #777;
+}
+
+.pic-content {
+  width: 80%;
+  display: inline-block;
+  box-shadow: none;
+  margin-left: 33%;
+}
+
+.cupcakes {
+
+}
+
+.brownies {
+  background-image: url('../pictures/baking.jpg');
+}
+
+.pies {
+  background-image: url('../pictures/pie_crust.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.block-main {
+  background: rgba( 255,255,255,.8);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: black;  
+}
+
+
+
+/*flip card*/
+#main-container {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flip-container {
+  position: relative;
+  padding: 3%;
+  margin-right: 0%;
+  margin-left: 0%;
+  width: 25%;
+  height: 486px;
+  z-index: 1;
+  perspective: 1000;
+  display: inline-block;
+}
+
+.flip-container-pies {
+  position: relative;
+  margin: 0% auto;
+  width: 50%;
+  overflow: hidden;
+  height: 139px;
+  z-index: 1;
+  perspective: 1000;
+}
+
+.pies-info {
+  margin: 0 auto;
+  width: 100%;
+  color: #6b3f3f;
+}
+
+.dessert-name {
+  font-size: .6em;
+  padding-top: 3%;
+  font-family: 'raleway'
+}
+
+.descript {
+  font-size: .6em;
+}
+
+.descript-2 {
+  font-size: .4em;
+  padding-bottom: 2.5%;
+
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#cupcakes .face.back { 
+  padding-top: 120px;
+  color: #6b3f3f;
+}
+
+#brownies .face.back { 
+  padding-top: 120px;
+  color: #6b3f3f;
+}
+
+#pies .face.back { 
+  padding-top: 120px; 
+  color: #6b3f3f;
+}
+}
+
+
+
+
